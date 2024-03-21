@@ -179,6 +179,8 @@ def calibration ():
         sleep(3)
 
 def Mahony_update(ax, ay, az, gx, gy, gz, deltat):
+#Inthis section of the mahony filter , the code was converted from a c++ mahony filter which Credit goes to the GitHub user, Jremington, 
+#Source : https://github.com/jremington/MPU-6050-Fusion/blob/main/MPU6050_MahonyIMU.ino
     global q, Kp, Ki
 
     recipNorm = 0.0
