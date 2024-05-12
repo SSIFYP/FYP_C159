@@ -71,13 +71,13 @@ try:
             key, value = line.strip().split(":")
             data_dict[key.strip()] = float(value.strip())  # Convert value to float if needed
     # Now you can access the values using the dictionary keys
-    ax = data_dict.get("ax", 0)  # Default value of 0 if key not found
-    ay = data_dict.get("ay", 0)
-    az = data_dict.get("az", 0)
-    gx = data_dict.get("gx", 0)  # Default value of 0 if key not found
-    gy = data_dict.get("gy", 0)
-    gz = data_dict.get("gz", 0)
-    print(f"Read data: ax={ax}, ay={ay}, az={az} , gx={gx}, gy={gy}, gz={gz}")
+    ax_OS = data_dict.get("ax", 0)  # Default value of 0 if key not found
+    ay_OS = data_dict.get("ay", 0)
+    az_OS = data_dict.get("az", 0)
+    gx_OS = data_dict.get("gx", 0)  # Default value of 0 if key not found
+    gy_OS = data_dict.get("gy", 0)
+    gz_OS = data_dict.get("gz", 0)
+    print(f"Read data: ax={ax_OS}, ay={ay_OS}, az={az_OS} , gx={gx_OS}, gy={gy_OS}, gz={gz_OS}")
     sleep(3)
 except FileNotFoundError:
     print("File not found. Make sure the file exists.")
